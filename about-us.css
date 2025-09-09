@@ -1,0 +1,132 @@
+body.about-page {
+  background-color: #d2b48c; 
+  font-family: Arial, sans-serif;
+  padding: 50px 20px; 
+  color: #f5f5dc; 
+}
+
+.about-box {
+  background-color: #C19A6B; 
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-box h1 {
+  color: #f5f5dc; 
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-box p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #f5f5dc; 
+  font-size: 1.1rem;
+}
+
+
+.about-box img {
+  width: 250px;
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.about-box img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Stilizo butonin */
+.btn {
+  display: inline-block;
+  background-color: #d2b48c; 
+  color: white; 
+  text-decoration: none;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffb75a; 
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mesazhi për shtim në shportë */
+.text-message {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 14px;
+  max-width: 300px;
+  word-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-message.show {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  body.about-page {
+    padding: 40px 15px;
+  }
+  
+  .about-box {
+    padding: 30px 20px;
+  }
+  
+  .about-box h1 {
+    font-size: 2rem;
+  }
+  
+  .about-box p {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  body.about-page {
+    padding: 30px 10px;
+  }
+  
+  .about-box {
+    padding: 20px 15px;
+  }
+  
+  .about-box h1 {
+    font-size: 1.6rem;
+  }
+  
+  .about-box p {
+    font-size: 0.95rem;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+  
+  .text-message {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,149 @@
+/* Stilimi për body */
+body.books-page {
+  background-color:   #b9834c; 
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  margin: 0;
+}
+
+/* Kontejneri kryesor i librave */
+.books-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Titujt */
+h1, h2 {
+  color:  white;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+/* Rreshti i librave */
+.books-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Një libër i vetëm */
+.book {
+  background-color: #f5f5dc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  height: 340px; /* të gjitha librat të njëjtë */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Fotoja e librit */
+.book img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* ruan pamjen e bukur të fotos */
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.book img:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+
+/* Titulli i librit */
+.book h3 {
+  margin: 10px 0 5px;
+  color:  #a56e37;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Çmimi */
+.price {
+  color:  #bd8044;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Butoni "Shto në Shportë" */
+.btn {
+  background-color: #be752b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color:  #b3793f;
+  transform: scale(1.1);
+}
+
+/* Popup për konfirmim */
+#cartPopup {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5f5dc;
+  color:  #c08041;
+  border: 2px solid  #c28548;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 9999;
+}
+
+/* Butoni Back */
+.back-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #ac7238;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid  #8f5c2a;
+}
+
+.back-link:hover {
+  background-color:  #ad7339;
+  color: #3e2c23;
+}
+/* NAV titujt */
+nav {
+  background-color:  #a97c50;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
